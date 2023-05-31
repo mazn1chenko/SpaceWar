@@ -23,29 +23,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var gameIsPaused: Bool = false
     
-//    func pauseTheGame() {
-//
-//        gameIsPaused = true
-//        self.asteroidLayer.isPaused = true
-//        physicsWorld.speed = 0
-//    }
-//
-//    func unPauseTheGame() {
-//        gameIsPaused = false
-//        self.asteroidLayer.isPaused = false
-//        physicsWorld.speed = 1
-//
-//    }
-//
-//    func resetTheGame() {
-//        score = 0
-//        scoreLabel.text = "Score: \(score)"
-//
-//        gameIsPaused = false
-//        self.asteroidLayer.isPaused = false
-//        physicsWorld.speed = 1
-//
-//    }
+    func pauseTheGame() {
+
+        gameIsPaused = true
+        self.asteroidLayer.isPaused = true
+        physicsWorld.speed = 0
+    }
+
+    func unPauseTheGame() {
+        gameIsPaused = false
+        self.asteroidLayer.isPaused = false
+        physicsWorld.speed = 1
+
+    }
+
+    func resetTheGame() {
+        score = 0
+        scoreLabel.text = "Score: \(score)"
+
+        gameIsPaused = false
+        self.asteroidLayer.isPaused = false
+        physicsWorld.speed = 1
+
+    }
 
     override func didMove(to view: SKView) {
         
@@ -128,10 +128,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             backgroundSpace.run(bgMoveaction)
             
-            //self.asteroidLayer.isPaused = !self.asteroidLayer.isPaused
-            //physicsWorld.speed = 0
+            self.asteroidLayer.isPaused = !self.asteroidLayer.isPaused
+            physicsWorld.speed = 0
             
-            //pauseTheGame()
+            pauseTheGame()
             
         }
     }
@@ -174,8 +174,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func update(_ currentTime: TimeInterval) {
         
-//        let asteroid = createAsteroid()
-//        addChild(asteroid)
+        let asteroid = createAsteroid()
+        addChild(asteroid)
     }
     
     override func didSimulatePhysics() {
