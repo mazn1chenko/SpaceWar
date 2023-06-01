@@ -16,22 +16,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfH-S0-yg1">
-                                <rect key="frame" x="303" y="45" width="74" height="64"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfH-S0-yg1">
+                                <rect key="frame" x="303" y="59" width="74" height="64"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" image="pause">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="pauseButtonPress:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Qux-jw-XgN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PfH-S0-yg1" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="303" id="cgf-Tj-UYW"/>
+                            <constraint firstItem="PfH-S0-yg1" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="eeS-KM-dRS"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="PfH-S0-yg1" secondAttribute="trailing" constant="16" id="lnc-4S-gZl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117" y="4"/>
+        </scene>
+        <!--Pause View Controller-->
+        <scene sceneID="Pm6-gl-nQK">
+            <objects>
+                <viewController storyboardIdentifier="PauseViewController" id="eBL-rt-3Qu" customClass="PauseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NfN-QF-QLz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAUSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-8T-cZt">
+                                <rect key="frame" x="136" y="293" width="120" height="108"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6i-fy-Kge">
+                                <rect key="frame" x="162" y="409" width="69" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Score"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDT-8T-Mnq">
+                                <rect key="frame" x="168" y="250" width="56" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Play"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jg2-yj-3V6"/>
+                        <color key="backgroundColor" white="1" alpha="0.39563635011382453" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfm-jT-ucb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887.78625954198469" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>

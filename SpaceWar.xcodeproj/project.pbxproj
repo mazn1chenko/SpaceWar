@@ -15,6 +15,9 @@
 		714DBBED2A26434900F3E651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714DBBEB2A26434900F3E651 /* Main.storyboard */; };
 		714DBBEF2A26434A00F3E651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714DBBEE2A26434A00F3E651 /* Assets.xcassets */; };
 		714DBBF22A26434A00F3E651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714DBBF02A26434A00F3E651 /* LaunchScreen.storyboard */; };
+		716FECEF2A28B5E6000778A2 /* Stars.sks in Resources */ = {isa = PBXBuildFile; fileRef = 716FECEE2A28B5E6000778A2 /* Stars.sks */; };
+		716FECF12A28C7C8000778A2 /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 716FECF02A28C7C8000778A2 /* Fire.sks */; };
+		716FECF32A28E2CC000778A2 /* PauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716FECF22A28E2CC000778A2 /* PauseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		714DBBEC2A26434900F3E651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		714DBBEE2A26434A00F3E651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		714DBBF12A26434A00F3E651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		716FECEE2A28B5E6000778A2 /* Stars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Stars.sks; sourceTree = "<group>"; };
+		716FECF02A28C7C8000778A2 /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
+		716FECF22A28E2CC000778A2 /* PauseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +69,11 @@
 				714DBBE32A26434800F3E651 /* GameScene.sks */,
 				714DBBE52A26434800F3E651 /* Actions.sks */,
 				714DBBE72A26434800F3E651 /* GameScene.swift */,
+				716FECF02A28C7C8000778A2 /* Fire.sks */,
+				716FECEE2A28B5E6000778A2 /* Stars.sks */,
 				714DBBE92A26434800F3E651 /* GameViewController.swift */,
 				714DBBEB2A26434900F3E651 /* Main.storyboard */,
+				716FECF22A28E2CC000778A2 /* PauseViewController.swift */,
 				714DBBEE2A26434A00F3E651 /* Assets.xcassets */,
 				714DBBF02A26434A00F3E651 /* LaunchScreen.storyboard */,
 			);
@@ -129,11 +138,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716FECF12A28C7C8000778A2 /* Fire.sks in Resources */,
 				714DBBED2A26434900F3E651 /* Main.storyboard in Resources */,
 				714DBBE42A26434800F3E651 /* GameScene.sks in Resources */,
 				714DBBEF2A26434A00F3E651 /* Assets.xcassets in Resources */,
 				714DBBF22A26434A00F3E651 /* LaunchScreen.storyboard in Resources */,
 				714DBBE62A26434800F3E651 /* Actions.sks in Resources */,
+				716FECEF2A28B5E6000778A2 /* Stars.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				714DBBE82A26434800F3E651 /* GameScene.swift in Sources */,
+				716FECF32A28E2CC000778A2 /* PauseViewController.swift in Sources */,
 				714DBBEA2A26434800F3E651 /* GameViewController.swift in Sources */,
 				714DBBE22A26434800F3E651 /* AppDelegate.swift in Sources */,
 			);
